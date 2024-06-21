@@ -4,10 +4,11 @@
 // import './App.css'
 import Chai from "./Chai"
 function App() {
+  const username='chai aur code'
   // const [count, setCount] = useState(0)
  return (
   <> <Chai/>
-  <h2>alok here</h2>
+  <h2>alok here {username}</h2>
   <h4>i am written inside fragments in react</h4>
   </>
  
