@@ -14,7 +14,8 @@ function App() {
   const remValue=()=>{
     count=count-1
     if(count<0){
-      alert('negative reached')
+      // alert('negative reached')
+
     }
     else
    setCount(count)
