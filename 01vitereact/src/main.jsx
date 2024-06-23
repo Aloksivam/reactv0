@@ -12,6 +12,7 @@ const reactEl = React.createElement(
 )
 ReactDOM.createRoot(document.getElementById('root')).render(
   // <React.StrictMode>
-    // reactEl
-    <App/>
+  <div>  reactEl
+    <App/></div>
+  
 )

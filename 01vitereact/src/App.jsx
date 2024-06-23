@@ -8,7 +8,7 @@ function App() {
   // const [count, setCount] = useState(0)
  return (
   <> <Chai/>
-  <h2>alok here {username}</h2>
+  <h2>alok here  through {username}</h2>
   <h4>i am written inside fragments in react</h4>
   </>
  
