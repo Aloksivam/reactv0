@@ -1,1 +1,2 @@
 /* eslint-disable no-unused-vars */
+rfc shortcut for creating a component in react
