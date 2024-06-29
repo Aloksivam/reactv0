@@ -1,2 +1,9 @@
 /* eslint-disable no-unused-vars */
 rfc shortcut for creating a component in react
+
+for creating a react app with vite
+
+npm create vite@latest 
+
+then change directory
+and run npm i to download all dependencies
