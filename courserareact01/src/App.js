@@ -9,6 +9,8 @@ import Btn from './components/Btn';
 import ModeToggler from './components/ModeToggler';
 import ClickCounter from './components/ClickCounter';
 import InputComponent from './components/InputComponent';
+import RegisterForm from './components/RegisterForm';
+import TextInputWithFocusButton from './components/TextInputWithFocusButton';
 function Header(){
   return <h1>Hello alok</h1>
 }
@@ -22,6 +24,8 @@ function App() {
     <ModeToggler/>
     <ClickCounter/>
     <InputComponent/>
+    <RegisterForm/>
+    <TextInputWithFocusButton/>
     </>
   );
 }
