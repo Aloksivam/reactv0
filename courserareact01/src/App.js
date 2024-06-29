@@ -7,6 +7,8 @@ import Pears from './components/Pears';
 import Promo from './components/Promo';
 import Btn from './components/Btn';
 import ModeToggler from './components/ModeToggler';
+import ClickCounter from './components/ClickCounter';
+import InputComponent from './components/InputComponent';
 function Header(){
   return <h1>Hello alok</h1>
 }
@@ -18,6 +20,8 @@ function App() {
     <Bag children={<Pears friend="Peter" />} />
     <Btn/>
     <ModeToggler/>
+    <ClickCounter/>
+    <InputComponent/>
     </>
   );
 }
