@@ -1,5 +1,5 @@
 /* eslint-disable no-unused-vars */
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
@@ -16,8 +16,19 @@ function App() {
     setTodos((prev)=>prev.filter((todo)=>todo.id!==id))
   }
   const toggleComplete=(id)=>{
-    setTodos((prev))=>
+    setTodos((prev)=>
+      prev.map((prevTodo)=>
+      prevTodo.id===id?{...prevTodo,completed:!prevTodo.completed}:prevTodo))
   }
+  useEffect(()=>{
+    const todos=JSON.parse(localStorage.getItem("todos "))
+    if(todos && todos.length>0){
+      setTodos(todos)
+    }
+  },[])
+  useEffect(()=>{
+    localStorage.setItem("todos",JSON.stringify(todos))
+  },[todos])
   return (
     <TodoProvider value={{todos,addTodo,updateTOdo,deleteTodo,toggleComplete}}>
      <h1 className="text-3xl font-bold underline">
