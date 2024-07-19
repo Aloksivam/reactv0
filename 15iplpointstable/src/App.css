@@ -1,0 +1,28 @@
+.App {
+  text-align: center;
+  margin-top: 20px;
+}
+
+table {
+  margin: 0 auto;
+  border-collapse: collapse;
+  width: 80%;
+}
+
+th, td {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+th {
+  background-color: #0de610;
+  color: white;
+}
+
+tr:nth-child(even) {
+  background-color: #353bd9;
+}
+
+tr:hover {
+  background-color: #957d83;
+}
