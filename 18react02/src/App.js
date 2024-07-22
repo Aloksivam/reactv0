@@ -1,25 +1,34 @@
-import logo from './logo.svg';
-import './App.css';
 import React from 'react'
-function App() {
-  const [toggle,setToggle]= React.useState('false');
-  const clickHandler = () =>{
-    setToggle(!toggle)
-  }
-  React.useEffect(()=>{
-    document.title = toggle?"Welcome to Phenomenal Classes":"Using the useEffect hook"
-  },[toggle])
-  return (
-    <div className="App">
-     <header>
-      <h1>Phenomenal Classes</h1>
-     </header>
-     <h2>Using the useEffect hook</h2>
-     <button onClick={clickHandler}>
-      Toggle messages
-     </button>
-     {toggle && <h2>Welcome to Phenomenal Classes</h2>}
-    </div>
-  );
+import './test.css';
+
+const Button = ({children,backgroundColor})=>{
+    return <button style={{backgroundColor}}>{children}</button>
 }
-export default App;
+const Alert = ({children})=>{
+    return(
+        <>
+        <div className='Overlay'/>
+        <div className='Alert'>{children}</div>
+        </>
+    )
+}
+const DeleteButton = ()=>{
+    return <Button backgroundColor='red'>Delete</Button>
+}
+export default function App() {
+    const [on,Seton]= React.useState(false);
+    const clickHandler = ()=>Seton(!on)
+  return (
+    <div className='App'>
+        <header>Little Lemon Resturent</header>
+        <button onClick={clickHandler} className='initialbtn'>Click me</button>
+        {on?<Alert>
+            <h4>Delete Account</h4>
+            <p>Are you sure you want to proceed? you will miss a lot of thing</p>
+            <DeleteButton/>
+        </Alert>:null}
+        
+        
+    </div>
+  )
+}
